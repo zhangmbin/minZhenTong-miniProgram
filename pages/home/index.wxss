@@ -1,0 +1,57 @@
+/* pages/home/index.wxss */
+.content {
+  padding-top: 20rpx;
+}
+.content .user-content {
+  width: 690rpx;
+  height: 306rpx;
+  position: relative;
+}
+.content .user-content .user-relatives {
+  display: flex;
+  width: 100%;
+  height: 112rpx;
+  color: #0075FF;
+  font-size: 30rpx;
+  background: #fff;
+}
+.content .user-content .user-relatives text {
+  margin-top: 16rpx;
+}
+.content .user-content .user-info {
+  width: 100%;
+  height: 236rpx;
+  position: absolute;
+  top: 76rpx;
+  left: 0;
+  font-size: 30rpx;
+  color: #fff;
+  background: #2186FD;
+  padding: 36rpx 36rpx;
+}
+.content .user-content .user-info .user {
+  display: flex;
+  flex-direction: column;
+}
+.content .user-content .user-info .qr-code {
+  width: 144rpx;
+  height: 176rpx;
+  position: absolute;
+  top: 36rpx;
+  right: 36rpx;
+  font-size: 20rpx;
+  color: #434F5D;
+  border-radius: 8rpx;
+  background-color: #D5E9FF;
+}
+.content .user-content .user-info .qr-code .qr-image {
+  width: 144rpx;
+  height: 132rpx;
+  padding: 10rpx 16rpx;
+  border-radius: 8rpx;
+  background-color: #fff;
+}
+.content .user-content .user-info .qr-code .qr-info {
+  width: 100%;
+  margin: 8rpx 22rpx 8rpx ;
+}

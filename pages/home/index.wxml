@@ -1,0 +1,47 @@
+<!--pages/home/index.wxml-->
+<view class="content">
+  <view class="user-content">
+      <view class="user-relatives common-radius">
+         <van-image
+         width="534rpx"
+         height="112rpx"
+         src="../../icons/222.jpg"
+         />
+        
+        <text>亲友信息</text>
+      
+      </view>
+      
+      <view class="user-info common-radius">
+        <view class="user">
+          <text class="user-name">林*晨</text>
+          <text class="user-id">身份证：350***********4231</text>
+          <text class="user-phone">手机号：152*****345</text>
+        </view>
+        <view class="qr-code">
+          <view class="qr-image">
+            <van-image
+            width="112rpx"
+            height="112rpx"
+            src="../../icons/222.jpg"
+            />
+          </view>
+          <view class="qr-info">
+            打开福建码
+          </view>
+        </view>
+      </view>
+
+  </view>
+
+  <view class="functional-card common-radius">
+    <view class="appointment-register">
+      预约挂号
+    </view>
+    <view class="online-consultation">
+      线上咨询
+    </view>
+  </view>
+
+
+</view>
