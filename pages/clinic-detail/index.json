@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-image": "@vant/weapp/image/index",
+    "common-tag":"/components/common-tag/index"
+  },
+  "navigationBarTitleText": "诊所详情"
+
+}

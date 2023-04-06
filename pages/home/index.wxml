@@ -1,29 +1,41 @@
-<!--pages/home/index.wxml-->
+
+<van-nav-bar 
+custom-class="nav-bar"
+>
+  <view slot="left">
+    <view class="locationHeader">
+    <view class="icon"></view>
+    <picker mode="selector" range="positionList" value="{{index}}" bindchange="changePicker">
+     <view>福州软件园A区{{positionList[currentPosi]}} </view>
+    </picker>
+    <view class="arrow"></view>
+  </view>
+  </view>
+</van-nav-bar>
+
 <view class="content">
   <view class="user-content">
-      <view class="user-relatives common-radius">
+      <view class="user-relatives common-radius24">
          <van-image
          width="534rpx"
-         height="112rpx"
-         src="../../icons/222.jpg"
+         height="266rpx"
+         src="/icons/images/card-bg@2x.png"
          />
-        
         <text>亲友信息</text>
-      
       </view>
       
-      <view class="user-info common-radius">
+      <view class="user-info common-radius24">
         <view class="user">
-          <text class="user-name">林*晨</text>
-          <text class="user-id">身份证：350***********4231</text>
-          <text class="user-phone">手机号：152*****345</text>
+          <view class="name">林*晨</view>
+          <view class="id">身份证：350***********4231</view>
+          <text class="phone">手机号：152*****345</text>
         </view>
         <view class="qr-code">
           <view class="qr-image">
             <van-image
             width="112rpx"
             height="112rpx"
-            src="../../icons/222.jpg"
+            src="/icons/images/资讯1@2x.png"
             />
           </view>
           <view class="qr-info">
@@ -34,13 +46,84 @@
 
   </view>
 
-  <view class="functional-card common-radius">
-    <view class="appointment-register">
-      预约挂号
+  <view class="functional-card common-radius24">
+    <view class="appointment-register" bindtap="showAppointmentPage">
+      <van-image
+      width="318rpx"
+      height="160rpx"
+      src="/icons/images/card-l@2x.png"
+      />
+      <text class="top">预约挂号</text>
+      <text class="low">在线免费挂号</text>
     </view>
-    <view class="online-consultation">
-      线上咨询
+    <view class="online-consultation" bindtap="showConsultationPage">
+      <van-image
+      class="common-radius24"
+      width="318rpx"
+      height="160rpx"
+      src="/icons/images/card-r@2x.png"
+      />
+      <text class="top">线上咨询</text>
+      <text class="low">看病足不出户</text>
     </view>
+
+  </view>
+
+  <swiper
+    indicator-dots
+    autoplay
+    current
+	  indicator-color="#0075FF"
+  >
+    <swiper-item>
+      <van-image
+        width="690rpx"
+        height="176rpx"
+        src="/icons/images/轮播@2x.png"
+      />
+    </swiper-item>
+    <swiper-item>
+      <van-image
+        width="690rpx"
+        height="176rpx"
+        src="/icons/images/轮播@2x.png"
+      />
+    </swiper-item>
+    <swiper-item>
+      <van-image
+        width="690rpx"
+        height="176rpx"
+        src="/icons/images/轮播@2x.png"
+      />
+    </swiper-item>
+  </swiper>
+
+  <view class="information-message common-radius24">
+    <view class="header">
+      <text>资讯信息</text>
+    </view>
+
+    <view class="news-content">
+
+      <view class="news" wx:for="{{messageList}}" wx:for-item="message" wx:key="id">
+      
+        <view class="news-box">
+            <van-image
+            class="common-radius24"
+            width="192rpx"
+            height="160rpx"
+            src="{{message.img}}"
+          />
+          <view class="news-text">
+            <view class="title">{{message.title}}</view>
+            <view class="news-date">{{message.published_time}}</view>
+          </view>
+        </view>
+        <van-divider></van-divider>
+      </view>
+
+    </view>
+    
   </view>
 
 

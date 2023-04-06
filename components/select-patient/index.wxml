@@ -1,0 +1,62 @@
+<!--components/select-patient/index.wxml-->
+<view class="select-patient common-padding common-bgc">
+  <view class="select-header">
+    <text>选择就诊人</text>
+    <view class="add">
+      <view class="add-icon"></view>
+      <text>新增就诊人</text>
+    </view>
+  </view>
+
+<!-- 有就诊人时显示 -->
+  <scroll-view 
+    scroll-x="true" 
+    class="select-content"
+    wx:if="{{hasPatient}}"
+  >
+    <view class="select-card selected">
+    <view class="info">
+      <van-image round width="88rpx" height="88rpx" src="/icons/头像@2x.png" />
+      <view class="patient-info">
+        <text>{{patient.name}}</text>
+        <view class="sex-age">
+          <text>{{patient.sex}}</text>
+          <text>{{patient.age}}岁</text>
+        </view>
+      </view>
+    </view>
+    </view>  
+    <view class="select-card ">
+    <view class="info">
+      <van-image round width="88rpx" height="88rpx" src="/icons/头像@2x.png" />
+      <view class="patient-info">
+        <text>{{patient.name}}</text>
+        <view class="sex-age">
+          <text>{{patient.sex}}</text>
+          <text>{{patient.age}}岁</text>
+        </view>
+      </view>
+    </view>
+    </view>
+
+  </scroll-view>
+
+<!-- 无就诊人 -->
+  <scroll-view 
+    scroll-x="true" 
+    class="select-content"
+    wx:else
+  >
+    <view class="select-card" bindtap="addNewPatient">
+      <van-image round width="88rpx" height="88rpx" src="/icons/待添加@2x.png" />
+      <view class="patient-info">
+        <view class="to-be-add">
+          <text>待添加</text>
+        </view>
+      </view>
+    </view>
+
+  </scroll-view>
+  
+</view>
+

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "common-tag":"/components/common-tag/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-divider": "@vant/weapp/divider/index"
+  }
+}

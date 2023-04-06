@@ -1,0 +1,4 @@
+<!--components/submit-button/index.wxml-->
+<view class="btn-submit ">
+  <button class="{{!hasPatient?'':'disable-btn'}}">{{title}}</button>
+</view>

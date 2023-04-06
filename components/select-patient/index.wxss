@@ -1,0 +1,89 @@
+/* components/select-patient/index.wxss */
+.select-patient {
+  width: 750rpx;
+  height: 274rpx;
+  background-color: #fff;
+  padding: 30rpx;
+  border-radius: 16rpx;
+}
+.select-patient .select-header {
+  height: 72rpx;
+  font-size: 30rpx;
+  font-family: PingFang SC-Bold, PingFang SC;
+  font-weight: bold;
+  color: #333333;
+  display: flex;
+  justify-content: space-between;
+}
+.select-patient .select-header .add {
+  font-size: 28rpx;
+  font-family: PingFang SC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #0075FF;
+  display: flex;
+}
+.select-patient .select-header .add .add-icon {
+  height: 32rpx;
+  width: 32rpx;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%230075ff;%7D.b%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Cg transform='translate(-270 -101)'%3E%3Ccircle class='a' cx='8' cy='8' r='8' transform='translate(270 101)'/%3E%3Cpath class='b' d='M-1898-2197v-2h-2a1,1,0,0,1-1-1,1,1,0,0,1,1-1h2v-2a1,1,0,0,1,1-1,1,1,0,0,1,1,1v2h2a1,1,0,0,1,1,1,1,1,0,0,1-1,1h-2v2a1,1,0,0,1-1,1A1,1,0,0,1-1898-2197Z' transform='translate(2175 2309)'/%3E%3C/g%3E%3C/svg%3E") no-repeat;
+  margin-right: 8rpx;
+  margin-top: 4rpx;
+}
+.select-patient .select-content {
+  width: 100%;
+  white-space: nowrap;
+}
+.select-patient .select-content .select-card {
+  display: inline-block;
+  width: 270rpx;
+  height: 142rpx;
+  background: #FFFFFF;
+  border: 1rpx solid #DDDDDD;
+  padding: 20rpx 26rpx 28rpx 30rpx;
+  margin-right: 20rpx;
+  border-radius: 16rpx;
+  position: relative;
+}
+.select-patient .select-content .select-card .patient-info {
+  width: 100%;
+  font-family: PingFang SC-Heavy, PingFang SC;
+  font-weight: 800;
+  color: #333333;
+  line-height: 28rpx;
+  margin-left: 20rpx;
+  margin-top: 2rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+ 
+}
+.select-patient .select-content .select-card .patient-info .sex-age {
+  width: 104rpx;
+  font-weight: 400;
+  color: #999999;
+  margin-top: 8rpx;
+  line-height: 28rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.select-patient .select-content .selected {
+  box-shadow: 0rpx 6rpx 12rpx 2rpx rgba(12, 111, 229, 0.15);
+  border-radius: 16rpx 16rpx 16rpx 16rpx;
+  border: 3rpx solid #A2CDFF;
+}
+
+.to-be-add{
+  font-size: 30rpx;
+  color: #999;
+  font-weight: 400;
+  margin-top: 30rpx;
+  position: absolute;
+  top: 26rpx;
+  left: 138rpx;
+  
+}
+
+.info{
+  display: flex;
+}

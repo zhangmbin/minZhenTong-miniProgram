@@ -1,0 +1,108 @@
+<!--pages/appointment-register/index.wxml-->
+<!-- <view class="select-patient common-padding common-bgc">
+  <view class="select-header">
+    <text>选择就诊人</text>
+    <view class="add">
+      <view class="add-icon"></view>
+      <text>新增就诊人</text>
+    </view>
+  </view>
+
+  <scroll-view scroll-x="true" class="select-content ">
+
+    <view class="select-card common-radius16 common-bgc selected">
+      <van-image round width="88rpx" height="88rpx" src="/icons/头像@2x.png" />
+      <view class="patient-info">
+        <text>郝小白</text>
+        <view class="sex-age">
+          <text>男</text>
+          <text>31岁</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="select-card common-radius16 common-bgc">
+      <van-image round width="88rpx" height="88rpx" src="/icons/头像@2x.png" />
+      <view class="patient-info">
+        <text>郝小白</text>
+        <view class="sex-age">
+          <text>男</text>
+          <text>31岁</text>
+        </view>
+      </view>
+    </view>
+    <view class="select-card common-radius16 common-bgc">
+      <van-image round width="88rpx" height="88rpx" src="/icons/头像@2x.png" />
+      <view class="patient-info">
+        <text>郝小白</text>
+        <view class="sex-age">
+          <text>男</text>
+          <text>31岁</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view> -->
+<select-patient></select-patient>
+
+<!-- <view class="disease-description common-bgc">
+  <view class="description-header">
+    <text>病情描述</text>
+    <text class="history-description">选择历史病情</text>
+  </view>
+  <form bindsubmit="">
+    <scroll-view scroll-x="true" class="disease-tags">
+      <view class="disease-tag activated">未确诊</view>
+      <view class="disease-tag">感冒</view>
+      <view class="disease-tag">胃炎</view>
+      <view class="disease-tag">发烧</view>
+    </scroll-view>
+    <textarea class="common-radius16" value="请详细描述您的病情(不能少于10个字)" />
+  </form>
+</view> -->
+<disease-description></disease-description>
+
+<view class="appointment-time common-bgc">
+  <view class="select-date">
+    <text>选择预约时间</text>
+    <scroll-view scroll-x="true" class="date-tags">
+      <view class="date-tag" >
+        <text>全部</text>
+      </view>
+      <view class="date-tag activated">
+        <text class="date-head">今天</text>
+        <text class="date-body">07-26</text>
+      </view>
+      <view class="date-tag">
+        <text class="date-head">今天</text>
+        <text class="date-body">07-26</text>
+      </view>
+      <view class="date-tag">
+        <text class="date-head">今天</text>
+        <text class="date-body">07-26</text>
+      </view>
+    </scroll-view>
+    <van-divider></van-divider>
+    <view class="select-time">
+      <view class="selected-date">
+        <view class="divider"></view>
+        <view class="date">7月26日 周一 </view>
+      </view>
+      <view class="time-tags">
+        <view class="time-tag selected">
+          上午
+        </view>
+        <view class="time-tag">
+          下午
+        </view>
+        <view class="time-tag">
+          晚上
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="btn-submit common-bgc">
+  <button>提交</button>
+</view>

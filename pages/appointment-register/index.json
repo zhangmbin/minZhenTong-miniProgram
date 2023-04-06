@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "select-patient":"/components/select-patient/index",
+    "disease-description":"/components/disease-description/index"
+  },
+  "navigationBarTitleText": "预约挂号"
+}

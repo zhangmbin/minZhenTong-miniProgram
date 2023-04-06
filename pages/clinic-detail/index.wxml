@@ -1,0 +1,97 @@
+<!--pages/clinic-detail/index.wxml-->
+<view class="clinic">
+  <van-image height="132rpx" width="132rpx" src="/icons/诊所.png"></van-image>
+
+  <view class="clinic-header">
+    <view class="clinic-info">
+      <view class="clinic-name">
+        福建中医药大学国医堂门诊部
+      </view>
+      <view class="state-icons">
+        <view class="state-online">
+          <view class="state-online-icon"></view>
+          <text>在线</text>
+        </view>
+        <view class="state-appointable">
+          <view class="state-appointable-icon"></view>
+          <text>可预约</text>
+        </view>
+      </view>
+      <view class="clinic-address">
+        福州市仓山区建新镇北新街36号
+      </view>
+      <view class="clinic-bottom">
+        <view class="clinic-score">
+          咨询量<text>110</text>
+        </view>
+        <view class="consultation-num">
+          关注量<text>50</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+  <van-image class="clinic-bgi" width="750rpx" height="259rpx" src="/icons/诊所详情背景@2x.png"></van-image>
+
+<view class="clinic-detail common-bgc common-radius24">
+  <view class="consultation-time">
+    <view class="consultation-tag">问诊时间</view>
+    <view class="time-available">
+      <text>周一至周五：09:00-11:30 14:00-20:00</text>
+      <text>周六和周日：10:00-11:10 15:00-18:00</text>
+    </view>
+  </view>
+  <view class="clinic-introduction">
+    <view class="consultation-tag clinic-introduction-tag">诊所简介</view>
+    <text style="word-break:break-all;">福建中医药大学国医堂门诊部，成立于1987年12月，系福建中医药大学直属医疗机构，依托大学深厚的学术底蕴和强大的中医专家阵容，荟萃了全校知名的中医临床专家，集医疗、教学、科研为一体的中医门诊。国医堂自创办......</text>
+  </view>
+</view>
+
+<view class="clinic-doctors common-radius24 common-bgc">
+  <view class="doctor-header">
+    诊所医生 ({{8}})
+  </view>
+  <view class="doctor-list">
+    <view class="doctor" bindtap="showDoctorDetail">
+      <van-image height="80rpx" width="80rpx" round></van-image>
+      <view class="doctor-name">郝运来</view>
+      <view class="medical-title">主任医师</view>
+    </view>
+    <view class="doctor">
+      <view class="title">所长</view>
+      <van-image height="80rpx" width="80rpx" round></van-image>
+      <view class="doctor-name">郝运来</view>
+      <view class="medical-title">主任医师</view>
+    </view>
+    <view class="doctor">
+      <van-image height="80rpx" width="80rpx" round></van-image>
+      <view class="doctor-name">郝运来</view>
+      <view class="medical-title">主任医师</view>
+    </view>
+    <view class="doctor">
+      <van-image height="80rpx" width="80rpx" round></van-image>
+      <view class="doctor-name">郝运来</view>
+      <view class="medical-title">主任医师</view>
+    </view>
+    <view class="doctor">
+      <van-image height="80rpx" width="80rpx" round></van-image>
+      <view class="doctor-name">郝运来</view>
+      <view class="medical-title">主任医师</view>
+    </view>
+    <view class="doctor">
+      <van-image height="80rpx" width="80rpx" round></van-image>
+      <view class="doctor-name">郝运来</view>
+      <view class="medical-title">主任医师</view>
+    </view>
+    <view class="doctor">
+      <van-image height="80rpx" width="80rpx" round></van-image>
+      <view class="doctor-name">郝运来</view>
+      <view class="medical-title">主任医师</view>
+    </view>
+    <view class="doctor">
+      <van-image height="80rpx" width="80rpx" round></van-image>
+      <view class="doctor-name">郝运来</view>
+      <view class="medical-title">主任医师</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,23 @@
+<!--pages/online-consultation/index.wxml-->
+<view class="select-consultation common-padding common-bgc">
+  <view class="select-header">
+    <text>选择咨询方式</text>
+  </view>
+
+    <view class="select-card common-radius16 common-bgc selected">
+      <van-image round width="84rpx" height="84rpx" src="/icons/健康咨询icon@2x.png" />
+      <view class="header">
+        <text>线上咨询</text>
+        <view class="charge">
+          <text>免费</text>
+        </view>
+      </view>
+    </view>
+
+</view>
+
+<select-patient></select-patient>
+
+<disease-description></disease-description>
+
+<submit-button></submit-button>

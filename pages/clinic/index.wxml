@@ -1,2 +1,61 @@
 <!--pages/clinic/index.wxml-->
-<text>pages/clinic/index.wxml</text>
+<van-nav-bar title="选择诊所"></van-nav-bar>
+
+<view class="clinic">
+  <view class="header common-bgc">
+    <view class="icon"></view>
+    <picker mode="selector" range="positionList" value="{{index}}" bindchange="changePicker">
+     <view class="location">福州软件园A区{{positionList[currentPosi]}} </view>
+    </picker>
+    <view class="arrow"></view>
+  </view>
+
+  <view class="clinic-content" wx:for="{{clinicList}}"  wx:for-item="clinic" wx:key="index" >
+    <view class="clinic common-bgc common-radius16" bindtap="showClinicDetail">
+      <view class="clinic-header">
+        <van-image height="132rpx" width="132rpx" src="{{clinic.clinic_img}}"></van-image>
+        <view class="clinic-info">
+          <view class="clinic-name">
+            {{clinic.clinic_name}}
+          </view>
+          <view class="clinic-address">
+            {{clinic.clinic_address}}
+          </view>
+          <view class="state-icons">
+            <view class="state-online">
+              <view class="state-online-icon"></view>
+              <text>在线</text>
+            </view>
+            <view class="state-appointable">
+              <view class="state-appointable-icon"></view>
+              <text>可预约</text>
+            </view>
+          </view>
+        </view>
+        <view class="clinic-location">
+          <van-image height="56rpx" width="56rpx" src="/icons/位置.png"></van-image>
+          <view class="clinic-distance">
+            168m
+          </view>
+        </view>
+      </view>
+     <van-divider></van-divider>
+     <view class="clinic-bottom"> 
+        <view class="clinic-score">
+          好评：<text>{{clinic.score}}%</text> 
+        </view>
+        <view class="col-line"></view>
+        <view class="consultation-num">
+          就诊量：<text>{{clinic.consultations}}</text> 
+        </view>
+        <view class="show-detail"  bindtap="showClinicDetail">
+          查看详情
+          <view class="show-detail-icon"></view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+  <view class="disease-description"></view>
+</view>

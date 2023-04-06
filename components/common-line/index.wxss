@@ -1,0 +1,5 @@
+/* components/common-line/index.wxss */
+.line{
+  width: 100%;
+  border-top: 2rpx solid #EDEEF0;
+}

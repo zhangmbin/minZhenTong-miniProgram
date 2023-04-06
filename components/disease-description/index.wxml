@@ -1,0 +1,16 @@
+<!--components/disease-description/index.wxml-->
+<view class="disease-description">
+  <view class="description-header">
+    <text>病情描述</text>
+    <text class="history-description">选择历史病情</text>
+  </view>
+  <form bindsubmit="">
+    <scroll-view scroll-x="true" class="disease-tags">
+      <view class="disease-tag activated">未确诊</view>
+      <view class="disease-tag">感冒</view>
+      <view class="disease-tag">胃炎</view>
+      <view class="disease-tag">发烧</view>
+    </scroll-view>
+    <textarea value="请详细描述您的病情(不能少于10个字)" />
+  </form>
+</view>

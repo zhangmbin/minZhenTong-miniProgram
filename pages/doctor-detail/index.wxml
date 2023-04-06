@@ -1,0 +1,74 @@
+<!-- 医生详情页 -->
+<!-- <common-tag content="abc"></common-tag> -->
+<view class="bg">
+  <van-image width="750rpx" height="422rpx" src="/icons/医生头部背景@2x.png"></van-image>
+</view>
+
+<view class="doctor-detail" >
+  <view class="doctor-info">
+    <view class="avatar">
+      <van-image width="132rpx" height="132rpx" round src="/icons/头像@2x.png"></van-image>
+    </view>
+    <view class="info">
+    <view class="name-title">
+      <view class="name">郝运来</view>
+      <view class="title">主任医师</view> 
+    </view>
+      <view class="department">福建中医药大学国医堂门诊部</view>
+    </view>
+  </view>
+
+  <view class="introduction common-bgc common-radius24">
+    <view class="specialize">
+      <common-tag content="擅长介绍" style="float: left; margin-right: 18rpx;"></common-tag>
+      <text  style="word-break:break-all;">儿童银悄病、过敏性皮肤病、自身免疫性疾病和小儿感冒的诊治以急性哮喘有着深入的研究。</text>
+    </view>
+    <view class="online-time">
+      <common-tag content="线上咨询时间"></common-tag>
+      <view class="time-available">
+        <view class="date">周一至周五：
+        </view>
+        <view class="time">10:00-11:10    15:00-18:00</view>
+      </view>
+      <view class="time-available">
+        <view class="date">周一和周五：
+        </view>
+        <view class="time">10:00-11:10    15:00-18:00</view>
+      </view>
+    </view>
+    <view class="offline-time">
+      <common-tag content="线下问诊时间"></common-tag>
+      <view class="time-available">
+        <view class="date">周一至周五：
+        </view>
+        <view class="time">10:00-11:10    15:00-18:00</view>
+      </view>
+      <view class="time-available">
+        <view class="date">周一和周五：
+        </view>
+        <view class="time">10:00-11:10    15:00-18:00</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="service-content common-bgc common-radius24">
+  <text>服务内容</text>
+  <view class="content">
+    <van-image height="80rpx" width="80rpx" src="/icons/健康咨询icon@2x.png"></van-image>
+    <view class="content-text">
+      <text class="text-title">在线咨询</text>
+      <text class="text-detail">随时随地解答</text>
+    </view>
+    <button bindtap="showConsultationPage">去咨询</button>
+  </view>
+  <van-divider></van-divider>
+  <view class="content">
+    <van-image height="80rpx" width="80rpx" src="/icons/线下预约icon@2x.png"></van-image>
+    <view class="content-text" >
+      <text class="text-title">预约挂号</text>
+      <text class="text-detail">随时随地解答</text>
+    </view>
+    <button bindtap="showAppointmentPage">去咨询</button>
+  </view>
+</view>

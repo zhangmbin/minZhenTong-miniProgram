@@ -1,0 +1,78 @@
+.patient-list {
+  margin-top: 46rpx;
+  margin-left: 30rpx;
+  padding-bottom: 20rpx;
+  position: relative;
+}
+.patient-list .patient {
+  width: 690rpx;
+  height: 260rpx;
+  padding: 40rpx 58rpx 26rpx 40rpx;
+  display: flex;
+  position: relative;
+}
+.patient-list .patient .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.patient-list .patient .avatar {
+  position: relative;
+}
+.patient-list .patient .avatar .tag {
+  width: 72rpx;
+  height: 32rpx;
+  background: #F2AE3F;
+  color: #fff;
+  font-size: 24rpx;
+  font-weight: 500;
+  text-align: center;
+  position: absolute;
+  top: 80rpx;
+  left: 14rpx;
+}
+.patient-list .patient .info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16rpx;
+}
+.patient-list .patient .info .header {
+  display: flex;
+}
+.patient-list .patient .info .header .name {
+  font-size: 36rpx;
+  font-weight: 800;
+  color: #333333;
+}
+.patient-list .patient .info .header .sex,
+.patient-list .patient .info .header .age {
+  font-size: 26rpx;
+  font-weight: 400;
+  color: #999999;
+  margin-top: 8rpx;
+}
+.patient-list .patient .info .header .sex {
+  margin-left: 28rpx;
+  margin-right: 12rpx;
+}
+.patient-list .patient .info .bottom {
+  font-size: 28rpx;
+  font-weight: 400;
+  color: #999999;
+  display: flex;
+  flex-direction: column;
+  margin-top: 18rpx;
+  line-height: 40rpx;
+}
+.patient-list .patient .default {
+  height: 60rpx;
+  font-size: 24rpx;
+  font-weight: 400;
+  color: #937432;
+  background: linear-gradient(90deg, #F7DCA6 0%, #FBEBC5 100%);
+  border-radius: 0rpx 24rpx 0rpx 24rpx;
+  padding: 12rpx 14rpx 14rpx 22rpx;
+  position: absolute;
+  top: 0;
+  right: 0;
+}

@@ -1,6 +1,8 @@
 const GET = 'get';
 const POST = 'post';
+
 const baseURL = 'http://121.204.145.122:18087/cdr';  // 接口请求地址
+// const baseURL = 'http://xxx.com';  // 接口请求地址
 
 module.exports = function (options) {
     return new Promise(function(resolve, reject) {
@@ -30,7 +32,6 @@ module.exports = function (options) {
                   //     })
                   // }
                   resolve(res.data)
-                  console.log('请求成功')
                 }
               })
             },
@@ -41,7 +42,6 @@ module.exports = function (options) {
                   title: '网络繁忙，请稍后重试~',
                   icon: 'none'
               })
-              console.log('请求失败')
              },
              complete: function () {
                 // 配对使用（loading消失）

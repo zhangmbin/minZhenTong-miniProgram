@@ -1,5 +1,10 @@
 {
   "usingComponents": {
-    "van-image": "@vant/weapp/image/index"
-  }
+    "van-image": "@vant/weapp/image/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-nav-bar": "@vant/weapp/nav-bar/index",
+    "location-tag":"/components/location-tag/index"
+  },
+  "navigationStyle":"custom"
+
 }

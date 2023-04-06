@@ -1,0 +1,48 @@
+.select-consultation {
+  width: 750rpx;
+  height: 274rpx;
+  padding: 30rpx;
+  margin-bottom: 30rpx;
+}
+.select-consultation .select-header {
+  height: 72rpx;
+  font-size: 30rpx;
+  font-family: PingFang SC-Bold, PingFang SC;
+  font-weight: bold;
+  color: #333333;
+  display: flex;
+  justify-content: space-between;
+}
+.select-consultation .select-card {
+  width: 320rpx;
+  height: 140rpx;
+  background: #FFFFFF;
+  border: 1rpx solid #DDDDDD;
+  padding: 20rpx 26rpx 28rpx 30rpx;
+  margin-right: 20rpx;
+  display: flex;
+}
+.select-consultation .select-card .header {
+  width: 100%;
+  font-family: PingFang SC-Heavy, PingFang SC;
+  font-weight: 800;
+  color: #333333;
+  line-height: 28rpx;
+  margin-left: 20rpx;
+  margin-top: 2rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.select-consultation .select-card .header .charge {
+  width: 104rpx;
+  font-weight: 400;
+  color: #999999;
+  margin-top: 8rpx;
+  line-height: 28rpx;
+}
+.select-consultation .selected {
+  box-shadow: 0rpx 6rpx 12rpx 2rpx rgba(12, 111, 229, 0.15);
+  border-radius: 16rpx 16rpx 16rpx 16rpx;
+  border: 3rpx solid #A2CDFF;
+}

@@ -6,8 +6,8 @@ Component({
     list: [{
       "pagePath": "/pages/home/index",
       "text": "首页",
-      "iconPath": "../icons/home.png",
-      "selectedIconPath": "../icons/home.png"
+      "iconPath": "../icons/home-selected.png",
+      "selectedIconPath": "../icons/home-selected.png",
     },
     {
       "pagePath": "/pages/clinic/index",

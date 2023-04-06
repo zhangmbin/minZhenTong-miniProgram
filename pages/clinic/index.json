@@ -1,3 +1,10 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "common-line":"/components/common-line/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-nav-bar": "@vant/weapp/nav-bar/index"
+  },
+  "navigationBarTitleText": "选择诊所",
+  "navigationStyle":"custom"
 }

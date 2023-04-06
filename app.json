@@ -2,14 +2,20 @@
   "pages": [
     "pages/home/index",
     "pages/clinic/index",
-    "pages/user/index"
+    "pages/user/index",
+    "pages/appointment-register/index",
+    "pages/online-consultation/index",
+    "pages/clinic-detail/index",
+    "pages/doctor-detail/index",
+    "pages/patient-list/index",
+    "pages/patient-list/add-patient/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Wechat",
+    "navigationBarTitleText": "",
     "navigationBarTextStyle": "black",
-    "backgroundColor":"#fff"
+    "backgroundColor": "#fff"
   },
   "sitemapLocation": "sitemap.json",
   "tabBar": {
@@ -21,8 +27,8 @@
       {
         "pagePath": "pages/home/index",
         "text": "首页",
-        "iconPath": "./icons/home.png",
-        "selectedIconPath": "./icons/home.png"
+        "iconPath": "./icons/home-selected.png",
+        "selectedIconPath": "./icons/home-selected.png"
       },
       {
         "pagePath": "pages/clinic/index",

@@ -1,17 +1,29 @@
 page{
-  width: 690rpx;
-  font-family: Source Han Sans CN;
+  width: 750rpx;
+  font-family: Source Han Sans CN,PingFang SC-Regular, PingFang SC;
   font-size: 28rpx;
   background-color: #F5F7FA;
   -webkit-font-smoothing: antialiased;
-  padding-left:30rpx;
-  padding-right:30rpx;
 }
 
-.common-radius{
-  border-radius: 24rpx 24rpx 24rpx 24rpx;
-}
-
-view{
+view {
   box-sizing: border-box;
 }
+
+.common-radius24{
+  border-radius: 24rpx;
+}
+
+.common-radius16{
+  border-radius: 16rpx;
+}
+
+.common-bgc{
+  background-color: #fff;
+}
+
+van-divider .van-divider{
+  padding: 0;
+  margin: 0;
+}
+

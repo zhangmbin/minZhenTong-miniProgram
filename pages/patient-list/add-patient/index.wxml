@@ -1,0 +1,103 @@
+<!--pages/patient-list/add-patient/index.wxml-->
+<view class="add-patient">
+  <form bindsubmit="">
+    <!-- <van-cell-group custom-class="formGroup">
+      <van-cell title="姓名" value="请输入就诊人姓名" />
+      <van-cell title="证件号码" value="请输入身份证号" />
+      <van-cell class="sex" title="性别" value="" use-label-slot>
+        <view slot="right-icon">
+            <view class="section">
+              <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                <view class="picker">
+                  当前选择：{{array[index]}}
+                </view>
+              </picker>
+            </view>
+          
+        </view>
+      </van-cell>
+      <van-cell title="证件号码" value="请输入年龄" />
+      <van-cell class="address" title="家庭地址" value="" use-label-slot>
+        <view slot="right-icon">
+          <view class="section">
+            <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+              <view class="picker">
+                {{region[0]}}，{{region[1]}}，{{region[2]}}
+              </view>
+            </picker>
+          </view>
+        </view>
+      </van-cell>
+      <van-cell class="address" title="详细地址" value="填写街道、小区、门牌号" />
+      <van-cell title="是否本人" use-label-slot>
+        <switch color="#0075FF"></switch>
+      </van-cell>
+      <van-cell title="设为默认" use-label-slot>
+        <switch color="#0075FF"></switch>
+      </van-cell>
+    </van-cell-group> -->
+    <van-cell-group>
+      <van-field
+        value="{{newPatient.name}}"
+        label="用户名"
+        placeholder="请输入用户名"
+        input-align="right"
+      />
+      <van-field
+        value="{{newPatient.idNum}}"
+        label="用户名"
+        placeholder="请输身份证号码"
+        input-align="right"
+      />
+
+      <van-cell class="sex" title="性别" value="" use-label-slot>
+        <view slot="right-icon">
+            <view class="section">
+              <picker bindchange="bindPickerChange" value="{{index}}" range="{{sexArray}}">
+                <view class="picker">
+                 男{{array[index]}}
+                </view>
+              </picker>
+              <view class="more"></view>
+            </view>
+        </view>
+      </van-cell>
+      <van-field
+        value="{{newPatient.age}}"
+        label="年龄"
+        placeholder="请输入年龄"
+        input-align="right"
+      />
+      <van-cell class="address" title="家庭地址" value="" use-label-slot>
+        <view slot="right-icon">
+          <view class="section">
+            <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+              <view class="picker">
+                {{region[0]}}，{{region[1]}}，{{region[2]}}
+              </view>
+            </picker>
+            <view class="more"></view>
+          </view>
+        </view>
+      </van-cell>
+
+      <van-field
+        value="{{newPatient.address}}"
+        label="详细地址"
+        placeholder="填写街道、小区、门牌号"
+        input-align="right"
+      />
+
+      <van-cell title="是否本人" use-label-slot>
+        <switch color="#0075FF"></switch>
+      </van-cell>
+      <van-cell title="设为默认" use-label-slot>
+        <switch color="#0075FF"></switch>
+      </van-cell>
+</van-cell-group>
+  </form>
+</view>
+
+<view class="submit common-bgc">
+  <submit-button title="确定"></submit-button>
+</view>

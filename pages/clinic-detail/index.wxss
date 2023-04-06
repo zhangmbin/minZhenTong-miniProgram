@@ -1,0 +1,170 @@
+.clinic-bgi {
+  position: relative;
+  top: 92rpx;
+  left: 0;
+}
+.clinic {
+  width: 750rpx;
+  padding-top: 54rpx;
+  padding-left: 30rpx;
+  height: 351rpx;
+  background: linear-gradient(180deg, #479AFB 0%, #0A7AFE 100%);
+  display: flex;
+  color: #fff;
+  position: relative;
+}
+.clinic .clinic-header {
+  z-index: 100;
+  display: flex;
+  padding-left: 24rpx;
+  padding-bottom: 20rpx;
+}
+.clinic .clinic-header .clinic-info .clinic-name {
+  font-size: 36rpx;
+  font-weight: 700;
+}
+.clinic .clinic-header .clinic-info .clinic-address {
+  font-size: 28rpx;
+  color: #FFFFFF66;
+  font-weight: 400;
+  margin-top: 20rpx;
+}
+.clinic .clinic-header .clinic-info .state-icons {
+  display: flex;
+  margin-top: 12rpx;
+}
+.clinic .clinic-header .clinic-info .state-icons .state-online,
+.clinic .clinic-header .clinic-info .state-icons .state-appointable {
+  height: 36rpx;
+  font-size: 24rpx;
+  font-family: PingFang SC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #ffffff;
+  border-radius: 4rpx;
+  padding-right: 12rpx;
+  display: flex;
+}
+.clinic .clinic-header .clinic-info .state-icons .state-online {
+  background: #E5AA16;
+  margin-right: 20rpx;
+}
+.clinic .clinic-header .clinic-info .state-icons .state-online .state-online-icon {
+  width: 21.43rpx;
+  height: 20rpx;
+  margin: 8rpx 6rpx 8rpx 8rpx;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10.716' height='10' viewBox='0 0 10.716 10'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Cpath class='a' d='M10.716,7.688c0,2.589-2.4,4.688-5.358,4.688a6.068,6.068,0,0,1-1.572-.2A9.78,9.78,0,0,1,.986,13,.174.174,0,0,1,.8,12.755a7.139,7.139,0,0,0,.516-1.986A4.355,4.355,0,0,1,0,7.688C0,5.1,2.4,3,5.358,3S10.716,5.1,10.716,7.688Zm-7.367,0a.67.67,0,1,0-.67.67A.67.67,0,0,0,3.349,7.688Zm2.679,0a.67.67,0,1,0-.67.67A.67.67,0,0,0,6.028,7.688Zm2.009.67a.67.67,0,1,0-.67-.67A.67.67,0,0,0,8.037,8.358Z' transform='translate(0 -3)'/%3E%3C/svg%3E") no-repeat;
+}
+.clinic .clinic-header .clinic-info .state-icons .state-appointable {
+  background-color: #3284FF;
+}
+.clinic .clinic-header .clinic-info .state-icons .state-appointable .state-appointable-icon {
+  width: 17.14rpx;
+  height: 20rpx;
+  margin: 8rpx 6rpx 8rpx 8rpx;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8.571' height='10' viewBox='0 0 8.571 10'%3E%3Cdefs%3E%3Cstyle%3E.a%7Bfill:%23fff;%7D%3C/style%3E%3C/defs%3E%3Cg transform='translate(-6 -3)'%3E%3Cg transform='translate(6 3)'%3E%3Cpath class='a' d='M6,3.357A.357.357,0,0,1,6.357,3h7.857a.357.357,0,0,1,0,.714H13.5v.714a3.215,3.215,0,0,1-1.827,2.9.5.5,0,0,0-.316.421v.5a.5.5,0,0,0,.316.421,3.214,3.214,0,0,1,1.826,2.9v.714h.714a.357.357,0,0,1,0,.714H6.357a.357.357,0,1,1,0-.714h.714v-.714A3.215,3.215,0,0,1,8.9,8.671a.5.5,0,0,0,.316-.421v-.5A.5.5,0,0,0,8.9,7.329a3.214,3.214,0,0,1-1.826-2.9V3.714H6.357A.357.357,0,0,1,6,3.357Zm1.786.357v.714A2.5,2.5,0,0,0,9.206,6.684a1.211,1.211,0,0,1,.722,1.065v.5a.651.651,0,0,0,.714,0v-.5a1.211,1.211,0,0,1,.722-1.066,2.5,2.5,0,0,0,1.421-2.256V3.714Z' transform='translate(-6 -3)'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") no-repeat;
+}
+.clinic .clinic-header .clinic-bottom {
+  display: flex;
+  font-size: 26rpx;
+  font-weight: 400;
+  color: #ffffff66;
+  margin-top: 6rpx;
+}
+.clinic .clinic-header .clinic-bottom .clinic-score text,
+.clinic .clinic-header .clinic-bottom .consultation-num text {
+  color: #fff;
+  margin-left: 12rpx;
+  margin-right: 32rpx;
+}
+.clinic-detail {
+  width: 690rpx;
+  height: 424rpx;
+  position: absolute;
+  top: 288rpx;
+  left: 30rpx;
+  padding: 30rpx;
+}
+.clinic-detail .consultation-tag {
+  width: 132rpx;
+  height: 40rpx;
+  font-size: 28rpx;
+  font-family: PingFang SC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #fff;
+  background: #0075FF;
+  border-radius: 4rpx;
+  padding-left: 10rpx;
+}
+.clinic-detail .time-available {
+  margin-top: 12rpx;
+  display: flex;
+  flex-direction: column;
+  font-size: 28rpx;
+  font-family: PingFang SC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #666666;
+  line-height: 40rpx;
+}
+.clinic-detail .clinic-introduction {
+  width: 100%;
+  height: 202rpx;
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  font-family: PingFang SC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #666666;
+  line-height: 40rpx;
+}
+.clinic-detail .clinic-introduction .clinic-introduction-tag {
+  float: left;
+  margin-right: 18rpx;
+}
+.clinic-doctors {
+  width: 690rpx;
+  margin-left: 30rpx;
+  padding: 30rpx 40rpx 30rpx 30rpx;
+  position: absolute;
+  top: 742rpx;
+}
+.clinic-doctors .doctor-header {
+  font-size: 36rpx;
+  font-family: PingFang SC-Heavy, PingFang SC;
+  font-weight: 800;
+  color: #333333;
+}
+.clinic-doctors .doctor-list {
+  margin-top: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.clinic-doctors .doctor-list .doctor {
+  display: flex;
+  width: 155rpx;
+  position: relative;
+  flex-direction: column;
+  font-family: PingFang SC-Regular, PingFang SC;
+}
+.clinic-doctors .doctor-list .doctor .doctor-name {
+  font-size: 26rpx;
+  font-weight: 800;
+  color: #333333;
+}
+.clinic-doctors .doctor-list .doctor .medical-title {
+  font-size: 22rpx;
+  font-weight: 400;
+  color: #999999;
+}
+.clinic-doctors .doctor-list .doctor .title {
+  position: absolute;
+  top: 0;
+  left: 62rpx;
+  background: linear-gradient(90deg, #FF836D 0%, #E7503D 100%);
+  border-radius: 16rpx 16rpx 16rpx 16rpx;
+  border: 2rpx solid #FFFFFF;
+  color: #FFFFFF;
+  font-size: 20rpx;
+  font-family: PingFang SC-Heavy, PingFang SC;
+  font-weight: 800;
+  padding: 2rpx 8rpx 2rpx 12rpx ;
+  z-index: 1;
+}

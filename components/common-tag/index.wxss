@@ -1,0 +1,12 @@
+/* components/common-tag/index.wxss */
+.common-tag{
+    width:fit-content ;
+    height: 40rpx;
+    font-size: 28rpx;
+    font-family: PingFang SC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #fff;
+    background: #0075FF;
+    border-radius: 4rpx;
+    padding: 0 10rpx;
+}

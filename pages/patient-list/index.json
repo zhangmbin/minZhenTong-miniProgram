@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-image": "@vant/weapp/image/index",
+    "submit-button":"/components/submit-button/index"
+  },
+  "navigationBarTitleText": "就诊人"
+    
+}

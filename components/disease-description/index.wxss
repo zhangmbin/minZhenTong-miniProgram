@@ -1,0 +1,56 @@
+/* components/disease-description/index.wxss */
+.disease-description {
+  width: 100%;
+  margin-top: 30rpx;
+  padding: 30rpx 30rpx;
+  background-color: #fff;
+}
+.disease-description .description-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 30rpx;
+  font-family: PingFang SC-Bold, PingFang SC;
+  font-weight: bold;
+  color: #333333;
+}
+.disease-description .description-header .history-description {
+  font-size: 28rpx;
+  font-family: PingFang SC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #0075FF;
+}
+.disease-description .disease-tags {
+  white-space: nowrap;
+  margin-top: 30rpx;
+}
+.disease-description .disease-tags .disease-tag {
+  display: inline-block;
+  height: 56rpx;
+  font-size: 28rpx;
+  font-family: PingFang SC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #333333;
+  border: 1rpx solid #CCCCCC;
+  border-radius: 8rpx;
+  margin-right: 20rpx;
+  padding: 8rpx 32rpx;
+}
+.disease-description .disease-tags .activated {
+  color: #fff;
+  background-color: #0075FF;
+}
+.disease-description textarea {
+  height: 234rpx;
+  width: 650rpx;
+  background: #F5F5F5;
+  margin-top: 20rpx;
+  padding: 30rpx;
+  padding-right: 14rpx;
+  font-size: 30rpx;
+  font-family: PingFang SC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #C8C9CC;
+  line-height: 0rpx;
+  letter-spacing: 20px;
+  border-radius: 16rpx;
+}

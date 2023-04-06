@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-image": "@vant/weapp/image/index",
+    "disease-description":"/components/disease-description/index",
+    "submit-button":"/components/submit-button/index",
+    "select-patient":"/components/select-patient/index"
+  },
+  "navigationBarTitleText": "在线咨询"
+}
